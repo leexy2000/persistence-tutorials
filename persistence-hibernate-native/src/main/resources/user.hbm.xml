@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="corp.walsin.part01.domain">
+	<class name="User1" table="USER">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="unid" type="string" column="unid" />
+		<property name="name" type="string" column="name" />
+		<property name="gender" type="string" column="gender" />
+		<property name="birthday" type="date" column="birthday" />
+	</class>
+</hibernate-mapping>
